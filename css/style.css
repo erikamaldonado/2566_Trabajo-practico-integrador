@@ -1,0 +1,140 @@
+
+#barrasup{
+    background-color:rgb(88,87,87)!important ;
+    height: 60px!important;
+}
+
+
+#bot_ticket{ color: rgb(7, 220, 7);
+
+}
+
+
+
+.container img { width: 100px;
+
+}
+
+h6{ text-align: center;}
+h4{text-align: center;}
+
+#tarjetas{
+    width: 60%;
+    margin: auto;
+}
+
+#JavaS{
+    background-color: yellow;
+    color: black;
+    border:none;
+}
+
+#React{
+    background-color: blue;
+    color: white;
+    border:none;
+}
+#Nego{
+    background-color:gray;
+    color: white;
+    border:none;
+}
+
+#Star{
+    background-color: red;
+    color: white;
+    border:none;
+}
+
+.col-lg-6{
+    background-color:rgb(88, 87, 87);
+    color: white;
+    padding: 10px !important;
+}
+
+#nombre{
+    width: 50% !important;
+    margin: auto;
+}
+#botonfin{
+    background-color: rgb(7, 220, 7);
+    color: white;
+    border:none;
+    text-decoration-line: none !important;
+}
+
+#anchofoot{
+    width:60%;
+}
+
+.txt1{
+    position: absolute;
+    color: white;
+    top: 350px;
+    /*top: 30%;*/
+    left: 50%;
+    max-width: 40%;
+    text-align: right;
+}
+
+.carousel-item{
+    position: relative;
+    opacity: 0.9;
+    display: inline-block;
+    text-align: right;
+    /*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+    background-color: black ;
+
+}
+
+#carouselExampleControls{
+    opacity:1;
+}
+
+#luz{
+
+    font-size:large;
+    
+}
+#luz-bot{
+    background-color: rgb(6, 248, 6);
+    color: white;
+    border:none;
+    
+}
+
+#cuerpo2{
+  width: 60%;
+  margin: auto;
+  
+}
+#valorT{
+    width: 50%;
+    margin: auto;
+
+}
+
+.card{
+    text-align: center;
+}
+
+#borrar{
+    background-color:rgb(7, 220, 7);
+}
+
+#resumen{
+    background-color: rgb(7, 220, 7);
+
+}
+
+#valor3{
+    color: black;
+   font-size:xx-large;
+   font-weight: 700;
+   background-color: rgba(125, 204, 228, 0.964);
+
+}
+
+.alert{
+    background-color:rgba(125, 204, 228, 0.964) !important ;
+}

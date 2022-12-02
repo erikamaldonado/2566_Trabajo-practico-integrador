@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Compra de Tickets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="js/funciones.js"></script>
+    
+    
+    </head>
+
+    
+        <head>
+
+          <!--barra navegacion superior-->
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark" id="barrasup">
+                <div class="container">
+                    
+                  
+                  <a class="navbar-brand" href="https://codoacodo.bue.edu.ar/" target="_blank"><img src="img/codoacodo.png" alt="">
+                    Conf BsAs</a>
+
+
+                  <div class="justify-content-end">
+
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html#luz">La conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#oradores">Los oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#lugar" >El lugar y la fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html#conviertete">Conviertete en orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="bot_ticket" href="#" target="_blank">Comprar tickets</a>
+                      </li>
+                    </ul>
+                  
+                  </div>
+                </div>
+            </nav>
+        </head>
+        <!--Fin Barra Navegador Superior-->
+        <br>
+        <!--Cuadros/valor venta-->
+
+        <div id="cuerpo2">
+
+            <div class="row">
+                <div class="col-sm-4 ">
+                  <div class="card border-primary">
+                    <div class="card-body">
+                      <h5 class="card-title">Estudiante</h5>
+                      
+                      <p class="card-text">Tienen un descuento</p>
+                      <h5>80%</h5>
+                      
+                      <p>*presentar documentación</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card border-success">
+                    <div class="card-body">
+                      <h5 class="card-title">Trainee</h5>
+                     
+                      <p class="card-text">Tienen un descuento</p>
+                      <h5>50%</h5>
+                      
+                      <p>*presentar documentación</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card border-warning">
+                      <div class="card-body">
+                        <h5 class="card-title">Junior</h5>
+                       
+                        <p class="card-text">Tienen un descuento</p>
+                        <h5>15%</h5>
+                        
+                        <p>*presentar documentación</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+            <p style="text-align: center ;">VENTA</p>
+
+            <h1 id="valorT">VALOR DEL TICKET $200</h1>
+
+            <br>
+
+        
+
+
+        <!--Formulario y cuenta TOTAL-->
+
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+            </div>
+          </div> 
+          <br>
+          
+          <div class="mb-3">
+                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+          </div>
+
+          <div class="row">
+          <div class="col">
+            <label for="cant" class="form-label" >Cantidad</label>
+            <input type="number" class="form-control" id="cant" placeholder="cantidad">
+          </div>
+
+          <div class="col">
+            <label for="validationDefault04" class="form-label">Categoria</label>
+            <select class="form-select" aria-label="Default select example" id="descuento">
+                <option value="1">Sin descuento</option>
+                <option value="2">Estudiante</option>
+                <option value="3">Trainee</option>
+                <option value="4">Junior</option>
+              </select>
+          </div>
+          </div>
+          <br>
+          <div class="alert alert-primary" role="alert">
+            Total a pagar:$ <input type="number" class="border border-0" id="valor3"> 
+          </div>
+
+          
+          
+          
+
+          <div class="row">
+            <div class="col">
+                <a href="index2.html"  target="_self">
+                <button type="button" class="btn col-12 btn-success" id="borrar" href="#index1.html" target="_self">Borrar</button>
+                 </a>
+            </div>
+            <div class="col">
+            <input type="button" class="btn col-12 btn-success" value="Resumen" id="resumen"onclick="calcular();"></button>
+            </div>
+          </div>
+          
+          <br>
+
+
+
+
+
+
+
+
+
+
+          
+        </div>
+
+        <nav class="navbar-nav navbar-dark navbar-expand-lg nav-justified " style="background-color:rgba(25, 44, 57, 0.977)" >
+
+            <ul id="anchofoot" class="navbar-nav mx-auto  navbar-expand"  >
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.casadellibro.com/libro-de-donde-venimos-y-hacia-donde-vamos/9788413987118/12487516">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.buenosaires.gob.ar/transformacioncultural/contactos">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.laprensa.com.ar" >Prensa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.ceupe.com/blog/conferencia.html" >Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.argentina.gob.ar/justicia/convosenlaweb/situaciones/porque-es-importante-leer-los-terminos-y-condiciones-de-una-pagina-en-internet-o-aplicacion" >Términos y condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://definicion.de/privacidad/">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  target="_blank" href="https://www.tiendapincha.com/?campaign=google-search&utm_source=google&utm_medium=google-search&utm_campaign=brand&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOcb2iTGU2Ra-SgYjgQYmktQlWkA_MIlj1l_N7urX2UjY-a-f6cLPWBoC9w8QAvD_BwE">Estudiantes</a>
+              </li>
+            </ul>
+          
+          
+        
+    </nav>
+       
+
+
+
+
+
+
+
+        <!-- Navbar content -->
+      </nav>
+      
+   
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
+      
+   
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
